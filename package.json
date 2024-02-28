@@ -1,0 +1,33 @@
+{
+  "name": "@altalune/cli",
+  "version": "1.0.0",
+  "bin": {
+    "altalune": "bin/index.js",
+    "altalune-cli": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "gen:version": "genversion --semi -e src/version.ts",
+    "build": "rm -rf dist && webpack"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "random-words": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.21",
+    "genversion": "^3.2.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
