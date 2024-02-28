@@ -1,6 +1,6 @@
 {
   "name": "@altalune/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "altalune": "bin/index.js",
     "altalune-cli": "bin/index.js"
